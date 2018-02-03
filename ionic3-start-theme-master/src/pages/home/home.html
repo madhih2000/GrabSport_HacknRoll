@@ -1,0 +1,70 @@
+<!-- -->
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <strong>Select</strong> Your Choices 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="animated fadeIn common-bg">
+
+  <ion-card no-margin margin-bottom class="full-width">
+   
+
+<ion-label>Beverage</ion-label>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+
+      <ion-select>
+  <ion-option> 
+  <ion-label>Tea</ion-label>
+  <ion-img value="Tea" tappable (click)="chooseTea" width="80" height="60" src="../assets/img/tea-label.jpg"></ion-img>
+  <span>{{ find.beverage }}</span>
+  </ion-option>
+     </ion-select>
+    </ion-col>
+    <ion-col>
+  <ion-label>Coffee</ion-label>
+  <ion-img value="Coffee" tappable (click)="chooseCoffee" width="80" height="60" src="../assets/img/coffee-label.jpg"></ion-img>
+   <span>{{ find.beverage }}</span>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+    <ion-label>Milo</ion-label>
+    <ion-img value="Milo" tappable (click)="chooseMilo" width="80" height="60" src="../assets/img/milo-label.jpg"></ion-img>
+     <span>{{ find.beverage }}</span>
+    </ion-col>
+    <ion-col>
+  <ion-label>Rose Syrup</ion-label>
+  <ion-img value="Rose " tappable (click)="chooseRose" width="80" height="60" src="../assets/img/rose-label.jpg"></ion-img>
+   <span>{{ find.beverage }}</span> 
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+
+
+
+
+   
+   </ion-card>
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+ <button ion-button round (click)="doSearch">Find beverage</button>
+
+</ion-content>
